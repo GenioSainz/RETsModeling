@@ -9,7 +9,7 @@ file_name  = arguments[0]
 
 def main( file_name ):
 
-    path_read  = f"../writing-api/files/temp/{ file_name  }"
+    path_read  = f"path to -----> /writing-api/files/temp/{ file_name }.xlsx"
     obj_array  = []
 
     for cols_range in ['K:K','L:L']:
@@ -23,5 +23,9 @@ def main( file_name ):
     regression2json( obj_array , path_write )
 
 if __name__ == "__main__":
-   main( file_name )
-   print(json_name )
+   main(  file_name )
+   print( json_name )
+
+
+
+   

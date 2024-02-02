@@ -27,4 +27,16 @@ if plots_ON:
     pv.plot_regression()
     pv.plot_Pmax_Tcell_Gpv()
     plt.show()   
+
+import json
+import time
+t = time.localtime()
+current_time = time.strftime("%H:%M:%S", t)
+data = {"a":1,
+        "b":2,
+        "c":3,
+        "time":current_time}
+json_path = 'PV_Modeling/test/data_prueba.json'
+with open(json_path, "w") as outfile: 
+        json.dump( data , outfile,  indent=4)
      
