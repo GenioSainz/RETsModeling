@@ -8,3 +8,5 @@ REM pip install -r requirements.txt
 
 REM Run python script %1 = file_name data_name.username
 python -m PV_Modeling.dev.main %1
+
+

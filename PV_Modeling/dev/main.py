@@ -9,7 +9,7 @@ file_name  = arguments[0]
 
 def main( file_name ):
 
-    path_read  = f"path to -----> /writing-api/files/temp/{ file_name }.xlsx"
+    path_read  = f"/writing-api/files/temp/{ file_name }.xlsx"
     obj_array  = []
 
     for cols_range in ['K:K','L:L']:
