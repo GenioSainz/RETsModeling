@@ -372,7 +372,7 @@ class PVmodule:
             return Pmp,Tcell1
      
     
-      def get_Pmp_Gpv_Tamb(self,Gpv=[10,1000],Tamb=[-5,40]):
+      def get_Pmp_Gpv_Tamb(self,Gpv=[10,1000],Tamb=[-5,40],disp_time=False):
            
            start        = time.time()
            nPoints      = 15
@@ -425,7 +425,9 @@ class PVmodule:
            self.Regression['ZR_interp'] = f_R(800,20)[0]
            
            lapse_time = time.time()-start
-           print(f'Lapse time Regression {lapse_time} s')
+
+           if disp_time:
+              print(f'Lapse time Regression {lapse_time} s')
                
            
       def calc_regression(self,X,Y,Z):

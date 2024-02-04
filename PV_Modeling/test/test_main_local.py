@@ -10,7 +10,7 @@ file_name  = arguments[0]
 
 def main( file_name ):
 
-    path_read  = f"PV_Modeling/docs/{ file_name  }"
+    path_read  = f"PV_Modeling/docs/{ file_name  }.xlsx"
     obj_array  = []
 
     for cols_range in ['K:K','L:L']:
